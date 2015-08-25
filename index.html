@@ -21,7 +21,7 @@
 <span style='font-size:.8em;'>You can <b>extend Lintalist</b> by writing your own <b><a href='#InteractiveBundleText'>plugins</a></b>. Lintalist is open source and developed in <a href='http://ahkscript.org/'>AutoHotkey</a>, an easy to learn scripting language for Windows.
 [WinXP(sp3)/Vista/7/8]<br /></span>
 <span style='font-size:.8em;'>As of LintaList v1.1 several types of formatted text are supported in Snippets.</span>
-<span class='date' style='float:right;display:inline;margin-top:0px;'>doc rev. 20150823</span></p>
+<span class='date' style='float:right;display:inline;margin-top:0px;'>doc rev. 20150825</span></p>
 </div>
 
 <div class='column'>
@@ -73,8 +73,11 @@
 <p>
 <a href='https://github.com/lintalist/lintalist/releases'><img src='img/lintalist65x65.gif' alt='Download Lintalist' width='65' align='left' border='0' style='margin-right: 5px;' /></a>
 Download (incl. source):<br />
-<a href='https://github.com/lintalist/lintalist/releases'><b>Latest release</b></a> (600 kb)<br />Simply unpack and run lintalist.ahk or lintalist.exe<br />
+<a href='https://github.com/lintalist/lintalist/releases'><b>Latest release</b></a> (720 kb)<br />Simply unpack and run lintalist.ahk or lintalist.exe<br />
 </p>
+
+<span class='tip' style="margin-bottom:10px;"><img src="img/usb.png" width=50 align=right title="USB image by Alessandro Rei (GNU/GPL) - http://findicons.com/icon/255067/usb?id=256158">Lintalist is a <b>portable application</b>. It stores all settings and bundles in the folder the program resides in. <a href="#portable">More...</a>
+</span>
 
 <p><b>Lintalist</b> Source code:<br />
 <a href='https://github.com/lintalist/lintalist/'>github.com/lintalist/lintalist</a></p>
@@ -101,6 +104,7 @@ The texts, shortcuts, abbreviations and scripts are called <b>snippets</b> and t
 The bundles are <b>context sensitive</b>: based on the <b>(partial) window title</b> of the currently active program it will try to load one or more matching bundles, this will allow you to use the same shortcuts and shorthands in different applications and files making it even more flexible. You don't have to use or remember any shortcuts or shorthands because you can <b>search your bundles</b> at any time by opening the search window. Think of it as text-expander which will save you countless keystrokes and has a number of additional features: hotkeys, full text search, plugins and scripts.
 
 <span class='tip'>Bundles and Snippets can be edited using the <a href='#Editing'>Lintalist Bundle &amp; Snippet Editors</a> OR in your preferred text editor.</span>
+
 For example: If you are editing a HTML file, Lintalist could use both a HTML and CSS bundle, but if you are editing a CSS file only the CSS Bundle is loaded. So, in your HTML file the shortcut <strong>ctrl+b</strong> can insert <strong>&lt;strong&gt;&lt;/strong&gt;</strong> at the caret position (or wrap the tag around the selected text) and while editing your CSS file the shortcut <strong>ctrl+b</strong> can insert <strong>font-style: bold;</strong> at the caret position. If a shortcut is found in multiple active bundles a pop-up-menu will appear so you can choose which snippet & bundle you prefer.
 
 <b>Note:</b> although Lintalist can expand abbreviations it is not intended to replicate or replace the native AutoHotkey Hotstrings features, see <a href='http://ahkscript.org/docs/Hotstrings.htm'>http://ahkscript.org/docs/Hotstrings.htm</a> for an introduction and description of all the options.
@@ -113,6 +117,12 @@ This program is written in AutoHotkey, a free, open-source (scripting) utility f
 - (Canned) email responses in a support environment
 </div>
 -->
+<span class='tip' id='portable' style='width:250px;float:right;margin:10px;margin-top:40px;border-top:3px dashed #FCDC3B;border-bottom:3px dashed #FCDC3B;background-color:#FFF8DC;' ><img src="img/usb.png" width=50 align=right title="USB image by Alessandro Rei (GNU/GPL) - http://findicons.com/icon/255067/usb?id=256158">Lintalist is a <b>portable application</b>. It stores all settings and bundles in the folder the program resides in. 
+
+When you run it for the very first time it does ask if you want a shortcut on your desktop or would like to automatically start it with Windows but you don't have to do that. You can run the program from a USB drive or dropbox account for example.
+
+If you want to take your copy of Lintalist with you all you have to do is copy the Lintalist folder. Same goes for making a backup.
+</span>
 <h3 id='FeatureList'>Full Feature List:</h3>
 
 - Full text snippet search using four different search modes
@@ -122,6 +132,7 @@ This program is written in AutoHotkey, a free, open-source (scripting) utility f
 - Run (AutoHotkey-)scripts
 - Local variables (user specific)
 - Bundle converters (simple lists, CSV, UltraEdit, Texter)
+- Portable application
 - Plugins are easy to develop, included by default are:
   - return caret to position in text
   - insert date & time incl. dates and time math
