@@ -21,7 +21,7 @@
 <span style='font-size:.8em;'>You can <b>extend Lintalist</b> by writing your own <b><a href='#InteractiveBundleText'>plugins</a></b>. Lintalist is open source and developed in <a href='https://autohotkey.com/'>AutoHotkey</a>, an easy to learn scripting language for Windows.
 [WinXP(sp3)/Vista/7/8/10]<br /></span>
 <span style='font-size:.8em;'>As of LintaList v1.1 several types of formatted text are supported in Snippets.</span>
-<span class='date' style='float:right;display:inline;margin-top:0px;'>doc rev. 20180415</span></p>
+<span class='date' style='float:right;display:inline;margin-top:0px;'>doc rev. 20180519</span></p>
 </div>
 
 <div class='column'>
@@ -71,7 +71,7 @@
 </div>
 
 <div class='column'>
-<p><b>Download Lintalist <em>1.9.5</em></b>
+<p><b>Download Lintalist <em>1.9.6</em></b>
 <p>
 <a href='https://github.com/lintalist/lintalist/releases'><img src='img/lintalist65x65.gif' alt='Download Lintalist' width='65' align='left' border='0' style='margin-right: 5px;' /></a>
 Download (incl. source):<br />
@@ -653,10 +653,13 @@ Neat trick: using a local variable or User input
 
 <tr id='calc-plugin'><td><code>[[Calc=]]</code> *2</td><td>Evaluation of the math expressions - see <a href='#Calc'>documentation below</a>.</td></tr>
 
-<tr id='calendar-plugin'><td><code>[[Calendar=Format|LCID]]</code></td><td>Displays a calendar window to allow you to select a date in a specific format (see DateTime below).
+<tr id='calendar-plugin'><td><code>[[Calendar=Format|LCID|to]]</code></td><td>Displays a calendar window to allow you to select a date in a specific format (see DateTime below).
 Basic example <code>[[Calendar=dd-MMM-yyyy]]</code> --> Select a date and it will be inserted like so: 25-Jan-2011
 
 [v1.8+] You can now specify an LCID. If you do not define one, the current user's locale is used to format the Date string. To use the system's locale instead, specify LSys. To use a specific locale, specify the letter L followed by a hexadecimal or decimal locale identifier (LCID). You can find a list of Locale IDs Assigned by Microsoft here <a href='https://msdn.microsoft.com/goglobal/bb964664.aspx' target='_blank'>msdn.microsoft.com/goglobal/bb964664.aspx</a>
+
+If you use a date range (e.g. start/end date) the wordt " to " is automatically inserted between the two dates, if you want something else such as another language or character " - " simply specificy this as the third paramater:
+<code>[[Calendar=dd-MMM-yyyy|| - ]]</code>
 
 </td></tr>
 
@@ -1582,20 +1585,12 @@ There is also a configuration setting that can do this: ActivateWindow
 <img src='img/lintalist-title-footer.gif' alt='lintalist' align='left' style='margin-top:6px;padding-right:5px;' /><b>Disclaimer:</b> Use at your own risk. If you find a new bundle take a look at the script sections of each snippet. As Lintalist can run any AutoHotkey script it can also run faulty or insecure code. Be sensible, if you simply want to try a bundle selecting 'Pause scripts' via the tray menu might be a useful idea.
 </span> 
 
-<span style='float:right;'>&copy; Copyright 2009-2018 Lintalist. See license.txt<br />This page uses Google Analytics.</span>
+<span style='float:right;'>&copy; Copyright 2009-2018 Lintalist. See license.txt</span>
 </pre>
 
 <a href="https://github.com/lintalist"><img style="position: absolute; top: 0; right: 0; border: 0;" src="img/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
 
 </div>
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-47883099-1', 'lintalist.github.io');
-  ga('send', 'pageview');
-</script>
 </body>
 </html>
