@@ -151,6 +151,9 @@ If you want to take your copy of Lintalist with you all you have to do is copy t
   - counters (can be created on the fly)
   - chain snippets (insert the text of one snippet into another)
   - insert text from file
+  - math (calc)
+  - random selection
+  - split and reuse text
   - formatted text and images using HTML, Markdown, RTF and Image
 
 <h2 id='Installing'>Installing <em>Lintalist</em></h2>
@@ -464,7 +467,7 @@ Detailed information on how to setup <b>MultiCaret.ini</b> in <a href='https://g
 <h3 id='Configuration-AltPaste'>AltPaste</h3>
 
 By default Lintalist uses <kbd>ctrl</kbd>+<kbd>c</kbd>, <kbd>ctrl</kbd>+<kbd>v</kbd> to copy and paste.
-If you need to use other shortcuts in specific programs (console or graphics applications for example) you can define these in <b>AltPaste.ini</b>, see <a href='AltPaste.md'>docs/AltPaste.md</a> for more information.
+If you need to use other shortcuts in specific programs (console or graphics applications for example) you can define these in <b>AltPaste.ini</b>, see <a href='https://github.com/lintalist/lintalist/blob/master/docs/AltPaste.md'>docs/AltPaste.md</a> for more information.
 
 <h3 id='Configuration-Linefeed'>Linefeed</h3>
 
@@ -1204,7 +1207,7 @@ Note that % signs in snippets do not need to be escaped as the <code>(join`n %</
 
 </blockquote>
 
-<a name='script_template'><b>Script template if you are going to use the clipboard and paste the result:</b>
+<a name='script_template'></a><b>Script template if you are going to use the clipboard and paste the result:</b>
 <blockquote class='boxed'>
 <span class='llbundle'>#NoEnv</span>
 <span class='llbundle'>#SingleInstance, force</span>
