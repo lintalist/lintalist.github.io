@@ -20,7 +20,7 @@
 <br /><br />
 <span style='font-size:.8em;'><b>Lintalist</b> is <b>open source</b> and developed in <a href='https://autohotkey.com/'>AutoHotkey</a>, an easy to learn scripting language for Windows.
 [WinXP(sp3)/Vista/7/8/10]<br /></span>
-<span class='date' style='float:right;display:inline;margin-top:0px;'>doc rev. 20200413</span></p>
+<span class='date' style='float:right;display:inline;margin-top:0px;'>doc rev. 20201129</span></p>
 </div>
 
 <div class='column'>
@@ -42,6 +42,7 @@
 <li><a href='#cmdline'>Command line parameters</a></li>
 <li><a href='#FAQ'>FAQ &amp; Known Issues</a></li>
 <li><a href='#Expert'>Expert</a></li>
+<li><a href='#Linux'>Linux</a></li>
 <li><a href='#History'>History</a> (changelog)</li>
 </ul>
 
@@ -86,7 +87,7 @@
 </div>
 
 <div class='column'>
-<p><b>Download Lintalist <em>1.9.13</em></b>
+<p><b>Download Lintalist <em>1.9.14</em></b>
 <p>
 <a href='https://github.com/lintalist/lintalist/releases'><img src='img/lintalist65x65.gif' alt='Download Lintalist' width='65' align='left' border='0' style='margin-right: 5px;' /></a>
 Download (incl. source):<br />
@@ -106,10 +107,14 @@ Download (incl. source):<br />
 <li><a href='https://www.freewarefiles.com/Lintalist_program_109453.html'>Freewarefiles.com</a> (en) &#x2197;</li>
 <li><a href='https://www.filecroco.com/download-lintalist/'>filecroco.com</a> (en) &#x2197;</li>
 <li><a href='http://www.ilovefreesoftware.com/25/windows/free-text-expander-tool-enter-snippets-according-to-active-program.html'>ilovefreesoftware.com</a> (en) &#x2197;</li>
+<li><a href='https://itigic.com/lintalist-an-alternative-to-the-windows-clipboard/'>itigic.com</a> (en) &#x2197; (<a href='https://itigic.com/pt/lintalist-an-alternative-to-the-windows-clipboard/'>pt</a>) &#x2197;</li>
 <li><a href='https://www.libellules.ch/dotclear/index.php?post/2018/10/31/Lintalist-gestionnaire-des-extraits-de-texte'>libellules.ch</a> (fr) &#x2197;</li>
 <li><a href='http://www.bchari.com/2019/03/lintalist.html'>bchari.com</a> (jp) &#x2197;</li>
 <li><a href='https://computertotaal.nl/artikelen/apps-software/dit-zijn-de-beste-freeware-tips-van-februari-2020/#rs-1582032317595'>computertotaal.nl</a> (nl) &#x2197;</li>
-</ul>
+<li><a href='https://videotanfolyam.hu/blog/2081/Lintalist_gyorsabb_es_kevesebb_gepeles_elore_megirt_szovegek_hasznalataval'>videotanfolyam.hu</a> (hu) &#x2197;</li>
+<!--
+<li><a href=''></a>  (en) &#x2197;</li>
+--></ul>
 </div>
 
 <div class='brk'></div>
@@ -269,7 +274,7 @@ Example: The case-insensitive RegEx 'se\w*g' it is actually using the following 
 
 Sometimes accented letters are part of the text you are searching for. These can be difficult or slow to type. By adding the variations of these letters to the search string you can search for 'cafe' but still find 'caf&eacute;'. So the 'e' in the query will be translated to searching for 'e&#xE9;&#xE8;&#xEA;&#x1E19;&#x11B;&#x115;&#x1EBD;&#x1E1B;&#x1EBB;&#x117;&#xEB;&#x113;&#x229;&#x119;&#x1D92;&#x247;&#x205;&#x1EBF;&#x1EC1;&#x1EC5;&#x1EC3;&#x1E1D;&#x1E17;&#x1E15;&#x207;&#x1EB9;&#x1EC7;&#xE6;&#x1FD;&#x1E3;&#x153;&#x1D6B;'.
 When active all search modes will use a Regular Expression (Regular and Fuzzy)
-(De)Activate the setting via the <i>L<u>v</u>?</i> checkbox in the Search GUI (<kbd>Alt</kbd>+<kbd>v</kbd>) or the SearchLetterVariations setting in the Configuration menu.
+(De)Activate the setting via the <i>L<u>v</u></i> button in the Search GUI (<kbd>Alt</kbd>+<kbd>v</kbd>) or the SearchLetterVariations setting in the Configuration menu.
 More information in the comments of 'include\LetterVariations.ahk'
 
 <h3 id='Omni'><a href='#Omni' class='headline'><em>Omni</em>search (search all bundles)</a></h3>
@@ -1840,6 +1845,10 @@ In settings.ini there are three hidden options:
 QueryAction: disable/enable
 QueryHotkey: hotkey to use to "run query"
 QueryScript: script to start and where query is passed onto as parameter(s). Default RunQuery.ahk, a dummy script is created if not found and QueryAction is enabled.
+
+<h2 id='Linux'><a href='#Linux' class='headline'>Linux</a></h2>
+
+It seems it is possible to run Lintalist on Linux, more information here <a href='https://github.com/sl5net/Lintalist4Linux'>github.com/sl5net/Lintalist4Linux</a> (independent project, not tested)
 
 <h2 id='History'><a href='#History' class='headline'>History</a></h2>
 
